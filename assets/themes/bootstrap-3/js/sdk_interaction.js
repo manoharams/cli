@@ -9,7 +9,7 @@ $(function(){
     
     $('.sdk-download-button').click(function() {
         $('#getCountry-downloadUrl').val($(this).data('download_url'));
-        $('#getCountryInfo-terms_url').attr('href', '/assets/downloads/sdk/Akamai Developers Term of Use (AK 10.14.2016).pdf');
+        $('#getCountryInfo-terms_url').attr('href', '/cli/assets/downloads/sdk/Akamai Developers Term of Use (AK 10.14.2016).pdf');
         $('#getCountryInfo-license_url').attr('href', $(this).data('license_url'));
         $('#getCountryInfo-license-text').html(''); //empty it first
         var license = $(this).data('license_url');

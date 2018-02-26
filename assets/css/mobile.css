@@ -220,31 +220,31 @@ html,body
     top: -50px;
     width: 235px;
     height: 116px;
-    background: url(/assets/img/mobile/cloud-api-acceleration-gray.png) no-repeat;
+    background: url(/cli/assets/img/mobile/cloud-api-acceleration-gray.png) no-repeat;
 }
 .cloudy .api-acceleration.hover {
     border-bottom: 1px solid #ff9933;
-    background-image: url(/assets/img/mobile/cloud-api-acceleration-hover.png);
+    background-image: url(/cli/assets/img/mobile/cloud-api-acceleration-hover.png);
     transition: opacity 300ms ease-out;
 }
 .cloudy .api-acceleration.hover ~ .viewer-acceleration {
     opacity: 1;
-    background-image: url(/assets/img/mobile/cloud-big-acceleration.png);
+    background-image: url(/cli/assets/img/mobile/cloud-big-acceleration.png);
 }
 .cloudy .api-caching {
     left: 345px;
     top: -50px;
     width: 180px;
     height: 116px;
-    background: url(/assets/img/mobile/cloud-api-caching-gray.png) top right no-repeat;
+    background: url(/cli/assets/img/mobile/cloud-api-caching-gray.png) top right no-repeat;
 }
 .cloudy .api-caching.hover {
     border-bottom: 1px solid #ff9933;
-    background-image: url(/assets/img/mobile/cloud-api-caching-hover.png);
+    background-image: url(/cli/assets/img/mobile/cloud-api-caching-hover.png);
 }
 .cloudy .api-caching.hover ~ .viewer-caching {
     opacity: 1;
-    background-image: url(/assets/img/mobile/cloud-big-caching.png);
+    background-image: url(/cli/assets/img/mobile/cloud-big-caching.png);
     transition: opacity 300ms ease-out;
 }
 .cloudy .api-compression {
@@ -252,15 +252,15 @@ html,body
     top: 119px;
     width: 285px;
     height: 116px;
-    background: url(/assets/img/mobile/cloud-api-compression-gray.png) no-repeat;
+    background: url(/cli/assets/img/mobile/cloud-api-compression-gray.png) no-repeat;
 }
 .cloudy .api-compression.hover {
     border-bottom: 1px solid #ff9933;
-    background-image: url(/assets/img/mobile/cloud-api-compression-hover.png);
+    background-image: url(/cli/assets/img/mobile/cloud-api-compression-hover.png);
 }
 .cloudy .api-compression.hover ~ .viewer-compression {
     opacity: 1;
-    background-image: url(/assets/img/mobile/cloud-big-compression.png);
+    background-image: url(/cli/assets/img/mobile/cloud-big-compression.png);
     transition: opacity 300ms ease-out;
 }
 .cloudy .api-prioritization {
@@ -268,15 +268,15 @@ html,body
     top: 109px;
     width: 264px;
     height: 143px;
-    background: url(/assets/img/mobile/cloud-api-prioritization-gray.png) top right no-repeat;
+    background: url(/cli/assets/img/mobile/cloud-api-prioritization-gray.png) top right no-repeat;
 }
 .cloudy .api-prioritization.hover {
     border-bottom: 1px solid #ff9933;
-    background-image: url(/assets/img/mobile/cloud-api-prioritization-hover.png);
+    background-image: url(/cli/assets/img/mobile/cloud-api-prioritization-hover.png);
 }
 .cloudy .api-prioritization.hover ~ .viewer-prioritization {
     opacity: 1;
-    background-image: url(/assets/img/mobile/cloud-big-prioritization.png);
+    background-image: url(/cli/assets/img/mobile/cloud-big-prioritization.png);
     transition: opacity 300ms ease-out;
 }
 .cloudy .viewer-acceleration,
@@ -297,7 +297,7 @@ html,body
     top: 0;
     width: 409px;
     height: 266px;
-    background: url(/assets/img/mobile/cloud-big.png) no-repeat;
+    background: url(/cli/assets/img/mobile/cloud-big.png) no-repeat;
 }
 
 @media (max-width: 767px) {

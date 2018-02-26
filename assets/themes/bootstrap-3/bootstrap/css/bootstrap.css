@@ -6360,7 +6360,7 @@ button.navbar-toggle {
 .navbar-default .navbar-nav > li .icon-rss-aggregator-sprite-pressed,
 .navbar-inverse .navbar-nav > li .icon-rss-aggregator-sprite-pressed {
   /* Courtesy of http://wearekiss.com/spritepad */
-  background: url(/assets/themes/bootstrap-3/img/rss_aggregator_sprites.png) no-repeat;
+  background: url(/cli/assets/themes/bootstrap-3/img/rss_aggregator_sprites.png) no-repeat;
   width: 17px;
   height: 17px;
 }
@@ -6529,7 +6529,7 @@ button.navbar-toggle {
   font-size: 12px;
 }
 #rss_aggregator_popover_icon {
-  background: url(/assets/themes/bootstrap-3/img/rss_aggregator_sprites.png) no-repeat;
+  background: url(/cli/assets/themes/bootstrap-3/img/rss_aggregator_sprites.png) no-repeat;
   background-position: -18px -19px;
   width: 17px;
   height: 17px;
@@ -7370,7 +7370,7 @@ footer .copyright {
 .icon-slideshare,
 .icon-twitter,
 .icon-youtube {
-  background: url(/assets/themes/bootstrap-3/img/follow-sprites.png) no-repeat;
+  background: url(/cli/assets/themes/bootstrap-3/img/follow-sprites.png) no-repeat;
   vertical-align: middle;
   display: inline-block;
 }

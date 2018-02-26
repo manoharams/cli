@@ -7088,7 +7088,7 @@ ul.fancy-tabs__icons-list > li:last-child {
     top: 0;
     bottom: 0;
     width: 100%;
-    background-image: url(/assets/img/photo-developer-tshirt.png);
+    background-image: url(/cli/assets/img/photo-developer-tshirt.png);
     background-repeat: no-repeat;
     background-position: center right;
     background-size: contain;
@@ -7302,7 +7302,7 @@ ul.vertical-tabs > li > .nav > li.active > a {
 @media only screen and (min-width: 769px) {
   .hero-devops__container {
     min-height: 420px;
-    background-image: url("/assets/img/pattern-wooden-desk.png");
+    background-image: url("/cli/assets/img/pattern-wooden-desk.png");
     background-position: bottom;
     background-repeat: repeat-x;
     background-size: 50% calc(100% - 20px);
@@ -7375,7 +7375,7 @@ ul.vertical-tabs > li > .nav > li.active > a {
 .hero-devops:before {
   content: '';
   height: 400px;
-  background-image: url("/assets/img/graphic-laptop-with-code.png");
+  background-image: url("/cli/assets/img/graphic-laptop-with-code.png");
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
@@ -7559,7 +7559,7 @@ ul.vertical-tabs > li > .nav > li.active > a {
 }
 
 .hero-capabilities__container {
-  background-image: url("/assets/img/photo-working-space.jpg");
+  background-image: url("/cli/assets/img/photo-working-space.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -7676,7 +7676,7 @@ ul.vertical-tabs > li > .nav > li.active > a {
 
 .hero-world-tour {
   background: #3997ba;
-  background-image: url("/assets/img/graphic-world-tour-globe.jpg");
+  background-image: url("/cli/assets/img/graphic-world-tour-globe.jpg");
   background-size: cover;
   background-position: center center;
 }
