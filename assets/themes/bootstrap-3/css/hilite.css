@@ -1,0 +1,18 @@
+pre span {
+    background: LemonChiffon;
+}
+
+.accordion-nav .panel-body div {
+    line-height: 90%;
+}
+
+.accordion-nav .panel-body {
+    padding: 10px 10px 10px 20px;
+}
+.accordion-nav .panel-body div {
+    padding-left: 0;
+}
+
+.width-left-nav {
+    width: 226px;    
+}

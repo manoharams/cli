@@ -1,0 +1,1340 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="google-site-verification" content="3LUiqL9GgvCGzuzXea8MFX9Ep-dwpGpark5J-XcOVkQ">
+
+    <title>Akamai CLI for Property Manager</title>
+
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PL4T8TN');</script>
+<!-- End Google Tag Manager -->
+
+
+    
+
+    <meta name="author" content="Akamai Technologies">
+
+    <!-- Bootstrap styles -->
+    <link href="/assets/themes/bootstrap-3/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    
+
+    <!-- Google Fonts -->
+    <!-- <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,300,800' rel='stylesheet' type='text/css'> -->
+
+    <!-- Custom Akamai CSS -->
+    <link rel="stylesheet" href="/assets/css/akamai_style.css">
+
+    
+
+    
+
+    
+
+    
+
+      <meta property="og:type" content="website">
+      <meta property="og:title" content="Akamai CLI for Property Manager">
+      <meta property="og:description" content="">
+      <meta property="og:image" content="/assets/img/graphic-akamai-cli.jpg">
+
+      
+      <link rel="stylesheet" href="/assets/css/devops/devops.css">
+      
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+      
+      <meta class="swiftype" name="title" data-type="string" content="Akamai CLI for Property Manager" />
+      
+      <meta class="swiftype" name="image" data-type="enum" content="/devops/images/photo-working-space.jpg" />
+      
+      <meta class="swiftype" name="keyword" data-type="string" content="DevOps Tools" />
+      
+      <meta class="swiftype" name="keyword" data-type="string" content="Akamai CLI" />
+      
+      <meta class="swiftype" name="keyword" data-type="string" content="Command Line Tools" />
+      
+      <meta class="swiftype" name="site-priority" data-type="integer" content="10" />
+      <meta class="swiftype" name="publication" data-type="string" content="us/en" />
+
+    
+
+    
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+
+    
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="/assets/js/html5shiv.js"></script>
+      <script src="/assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom JS for Edge_2016 Page -->
+    
+
+    <!-- Custom JS for landing Page -->
+    
+
+    <!-- Fav and touch icons -->
+    <!-- Update these with your own images
+      <link rel="shortcut icon" href="images/favicon.ico">
+      <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    -->
+
+    <!-- atom & rss feed -->
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+    
+      <!-- Slick -->
+      <link rel="stylesheet" type="text/css" href="/assets/themes/bootstrap-3/slick/slick.css"/>
+      <link rel="stylesheet" type="text/css" href="/assets/themes/bootstrap-3/slick/slick-theme.css"/>
+    
+
+  </head>
+
+  <body class="akamai devops">
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PL4T8TN"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <div class="navbar navbar-default navbar-static-top" role="navigation">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="navbar-header hidden-stop-gap">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+        <div class="inline-block main-logo">
+          <a class="brand akamai" href="/index.html"><img src="/assets/themes/bootstrap-3/img/akamai-developer-logo.jpg" alt="Akamai Developer"></a>
+        </div>
+      </div>
+      <div id="navbar_wrapper" class="navbar-collapse collapse pull-right col-md-8 col-xs-12">
+        <ul class="nav navbar-nav navbar-right text-right pull-right text-xs-center">
+          
+          
+          
+
+
+  
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+        
+          <li><a href="/introduction/">Get Started</a></li>
+        
+      
+    
+  
+    
+      
+      
+      
+        
+          <li><a href="/tools/">Tools</a></li>
+        
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+        
+          <li><a href="/learn/">Learn</a></li>
+        
+      
+    
+  
+
+
+
+ <!-- Builds Intro, ... -->
+          <li>
+            <a href="https://github.com/akamai" target="_blank">Code</a>
+          </li>
+          <li>
+            <span id="rss_aggregator_wrapper">
+              <a href="https://community.akamai.com/community/developer/content" target="_blank">Community</a>
+            </span>
+          </li>
+          <li>
+            <a href="https://developer.akamai.com/blog">Blog</a>
+          </li>
+          <li style="margin-left: 10px;">
+            <a href="https://developer.akamai.com/register" class="btn btn-primary btn-small">Register</a>
+          </li>
+          <li class="navbar-form navbar-right">
+            <form action="/search.html" class="navbar-search left-inner-addon" accept-charset="UTF-8">
+              <i class="glyphicon glyphicon-search"></i>
+              <input class="form-control" type="text" name="q" size="31" placeholder="Search">
+            </form>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="container-fluid" id="redesigned-page">
+
+<div class="js-initStickyNav js-showNavHere">
+    <div class="page-nav__container js-stickyNavContainer">
+        <div class="container">
+
+            <nav class="page-nav">
+                <a class="page-nav__link u-uppercase " href="/cli/">Overview</a>
+                <a class="page-nav__link u-uppercase is-active" href="/cli/packages/">Packages</a>
+                <a class="page-nav__link u-uppercase " href="/cli/docs/">Documentation</a>
+            </nav>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+    
+
+
+
+    
+        
+            
+        
+    
+
+    
+    
+
+
+<div class="page-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="vertical-tabs__container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-2">
+                            <div class="vertical-tabs--mobile__wrapper visible-xs">
+    <select class="vertical-tabs--mobile js-initVerticalTabsOnMobile" id="vertical-tabs-mobile">
+        
+        <option value="#package-authentication" class="u-color--pink" selected="selected">
+            Authentication
+        </option>
+        
+        <option value="#package-netstorage" class="u-color--purple" >
+            NetStorage
+        </option>
+        
+        <option value="#package-network-experience-analytics" class="u-color--orange--dark" >
+            Network Experience Analytics
+        </option>
+        
+        <option value="#package-property-manager" class="u-color--yellow" >
+            Property Manager
+        </option>
+        
+        <option value="#package-purge" class="u-color--red" >
+            Purge
+        </option>
+        
+        <option value="#package-visitor-prioritization" class="u-color--green" >
+            Visitor Prioritization
+        </option>
+        
+    </select>
+</div>
+
+    
+
+<ul class="vertical-tabs nav nav-pills nav-stacked sidebar hidden-xs" role="tablist" data-spy="affix" data-offset-top="180" data-offset-bottom="200">
+    
+    
+    <li class="u-color--pink" role="presentation">
+        <a href="/cli/packages/authentication.html" data-font-size="3">
+            Authentication
+        </a>
+    </li>
+    
+    
+    <li class="u-color--purple" role="presentation">
+        <a href="/cli/packages/netstorage.html" data-font-size="3">
+            NetStorage
+        </a>
+    </li>
+    
+    
+    <li class="u-color--orange--dark" role="presentation">
+        <a href="/cli/packages/network-experience-analytics.html" data-font-size="3">
+            Network Experience Analytics
+        </a>
+    </li>
+    
+    
+    <li class="u-color--yellow active" role="presentation">
+        <a href="/cli/packages/property-manager.html" data-font-size="3">
+            Property Manager
+        </a>
+    </li>
+    
+    
+    <li class="u-color--red" role="presentation">
+        <a href="/cli/packages/purge.html" data-font-size="3">
+            Purge
+        </a>
+    </li>
+    
+    
+    <li class="u-color--green" role="presentation">
+        <a href="/cli/packages/visitor-prioritization.html" data-font-size="3">
+            Visitor Prioritization
+        </a>
+    </li>
+    
+</ul>
+                        </div>
+                        <div class="col-xs-12 col-sm-10">
+                            <div class="vertical-tabs__content tab-content js-scrollToVerticalTabsContent">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-9">
+                                        <h1>Akamai CLI for Property Manager</h1>
+                                        <p class="lead">
+                                            Manage configurations for Akamai properties
+                                        </p>
+                                        <pre><i class="fa fa-download"></i> <code>akamai install property</code></pre>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-3">
+                                        <ul class="list-group">
+                                            <li class="list-group-item list-group-item-info"><strong>About This Package</strong></li>
+                                            
+                                            
+                                                <li class="list-group-item"><i class="fa fa-github-alt"></i> <a href="https://github.com/akamai/cli-property">Source</a></li>
+                                            
+                                            
+                                                <li class="list-group-item">
+                                                    <i class="fa fa-bug"></i>
+                                                    <a href="https://github.com/akamai/cli-property/issues">
+                                                        Issues
+                                                        
+                                                            (31 open)
+                                                        
+                                                    </a>
+                                                </li>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <p>
+                                            <strong>Latest Release:</strong>
+                                            1.0.2
+                                        </p>
+
+
+                                    </div>
+                                    <div class="col-xs-6 text-right">
+                                    
+                                        <p><strong>Release Date:</strong> 2018-02-06</p>
+                                    
+                                    </div>
+                                </div>
+                                
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <h3>Release Notes</h3>
+<p>Fixes output to go to STDERR so that content can be piped.</p>
+                                        </div>
+                                    </div>
+                                
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <h3>Package Commands</h3>
+                                        <table class="table table-responsive">
+                                            <thead>
+                                            <tr>
+                                                <th class="text-center">Command</th>
+                                                <th class="text-center">Aliases</th>
+                                                <th class="text-center">Version</th>
+                                                <th>Description</th>
+                                                <th class="text-center">Binaries Available</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            
+                                            <tr>
+                                                <td class="text-center">property</td>
+                                                <td class="text-center"></td>
+                                                <td class="text-center">1.0.2</td>
+                                                <td>Manage configurations for Akamai properties</td>
+                                                <td class="text-center">
+                                                    
+                                                    <i class="fa u-color--green fa-check"></i>
+                                                    
+                                                </td>
+                                            </tr>
+                                            
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <hr>
+                                <h2 id="readme">README</h2>
+
+<h1 id="akamaicliforpropertymanager">Akamai CLI for Property Manager</h1>
+
+<p><em>NOTE:</em> This tool is intended to be installed via the Akamai CLI package manager, which can be retrieved from the releases page of the <a href="https://github.com/akamai/cli">Akamai CLI</a> tool.</p>
+
+<h3 id="localinstallifyouchoosenottousetheakamaipackagemanager">Local Install, if you choose not to use the akamai package manager</h3>
+
+<ul>
+<li>Node 7</li>
+<li>npm install after <em>every</em> update</li>
+<li>Ensure that the &#8216;bin&#8217; subdirectory is in your path</li>
+</ul>
+
+<h3 id="credentials">Credentials</h3>
+
+<p>In order to use this configuration, you need to:
+* Set up your credential files as described in the <a href="https://developer.akamai.com/introduction/Prov_Creds.html">authorization</a> and <a href="https://developer.akamai.com/introduction/Conf_Client.html">credentials</a> sections of the getting started guide on developer.akamai.com.<br/>
+* When working through this process you need to give grants for the property manager API and the User Admin API (if you will want to move properties). The section in your configuration file should be called &#8216;papi&#8217;.</p>
+
+<h2 id="overview">Overview</h2>
+
+<p>The Akamai Config Kit is a set of nodejs libraries that wraps Akamai&#8217;s {OPEN} APIs to help simplify common configuration tasks. </p>
+
+<p>This kit can be used in different ways:
+* <a href="#akamaiProperty">As a no-fuss command line utility</a> to interact with the library.
+* <a href="#library">As a library</a> you can integrate into your own Node.js application.
+* <a href="#gulp">As a gulp integration</a> to integrate with your Continuous Integration/Continuous Deployment toolset.</p>
+
+<pre><code>MacBook-Pro:AkamaiOPEN-edgegrid-python khunter$ akamai property
+Usage: akamai property &lt;command&gt; &lt;args&gt; [options]
+
+Commands:
+  groups                 retrieve account groups
+  formats                get rules formats
+  search &lt;property&gt;      search for a property name
+  create &lt;property&gt;      create a new property
+  modify &lt;property&gt;      Modify specified property
+  activate &lt;property&gt;    activate the property
+  deactivate &lt;property&gt;  deactivate the property
+  delete &lt;property&gt;      delete a property
+  update &lt;property&gt;      update target property
+  retrieve &lt;property&gt;    retrieve rules from target property
+
+Command options:
+  --config &lt;config&gt;    Config file                [file] [default: /Users/khunter/.edgerc]
+  --section &lt;section&gt;  Config section                             [string] [default: papi]
+  --debug &lt;debug&gt;      Turn on debugging.                                        [boolean]
+  --help               Show help                                [commands: help] [boolean]
+  --version            Show version number                   [commands: version] [boolean]
+
+Copyright (C) Akamai Technologies, Inc
+Visit http://github.com/akamai/cli-property for detailed documentation
+</code></pre>
+
+<h2 id="akamaiproperty">akamaiProperty</h2>
+
+<p>This script wraps all of the functionality from the <a href="#library">library</a> into a command line utility which can be used to support the following use cases. All of the functions expect the config name.
+* <a href="#create">Create property</a>
+* <a href="#retrieve">Retrieve property rules</a>
+* <a href="#update">Update a property</a>
+* <a href="#activate">Activate or deactivate</a>
+* <a href="#modify">Modify a property</a></p>
+
+<h3 id="create">Create</h3>
+
+<pre><code>Usage: akamai property create &lt;property&gt; [options]
+
+Arguments:
+  &lt;property&gt;                                                           [required] [string]
+
+Source options:
+  --clone &lt;from&gt;      Source property to clone from                               [string]
+  --srcver &lt;version&gt;  Version for source property                                 [string]
+  --file &lt;path&gt;       Source file for new property rules               [file] [must exist]
+  --nocopy            Do not copy cloned hostnames                               [boolean]
+
+Hostname options:
+  --hostnames &lt;list&gt;             Comma delimited list of hostnames for property
+                                 [array:string]
+
+  --origin &lt;origin&gt;              Origin to set for property
+                                 [string]
+
+  --edgehostname &lt;edgehostname&gt;  Edge hostname to use
+                                 [string]
+
+  --forward &lt;value&gt;              Forward host header (origin|incoming|&lt;host&gt;)
+                                 [string]
+
+Location options:
+  --cpcode &lt;cpcode&gt;      Use specified cpcode for new property                    [number]
+  --contract &lt;contract&gt;  Contract for new property                                [string]
+  --group &lt;group&gt;        Group for new property                                   [string]
+
+General options:
+  --ruleformat &lt;format&gt;  Use specified rule format                                [string]
+  --notes &lt;notes&gt;        Version notes for the property version                   [string]
+  --retrieve             Retrieve rules for created property                     [boolean]
+
+Command options:
+  --config &lt;config&gt;    Config file                [file] [default: /Users/khunter/.edgerc]
+  --section &lt;section&gt;  Config section                             [string] [default: papi]
+  --debug &lt;debug&gt;      Turn on debugging.                                        [boolean]
+  --help               Show help                                [commands: help] [boolean]
+  --version            Show version number                   [commands: version] [boolean]
+
+Copyright (C) Akamai Technologies, Inc
+Visit http://github.com/akamai/cli-property for detailed documentation
+</code></pre>
+
+<h3 id="retrieve">Retrieve</h3>
+
+<pre><code>Usage: akamai property retrieve &lt;property&gt; [options]
+
+Arguments:
+  &lt;property&gt;                                                           [required] [string]
+
+General options:
+  --format       Rules format only                                               [boolean]
+  --hostnames    Retrieve hostnames for property                                 [boolean]
+  --variables    Retrieve user variables                                         [boolean]
+  --propver      Retrieve specified version                                      [boolean]
+  --file &lt;path&gt;  Output file                                                        [file]
+
+Command options:
+  --config &lt;config&gt;    Config file                [file] [default: /Users/khunter/.edgerc]
+  --section &lt;section&gt;  Config section                             [string] [default: papi]
+  --debug &lt;debug&gt;      Turn on debugging.                                        [boolean]
+  --help               Show help                                [commands: help] [boolean]
+  --version            Show version number                   [commands: version] [boolean]
+
+Copyright (C) Akamai Technologies, Inc
+Visit http://github.com/akamai/cli-property for detailed documentation
+</code></pre>
+
+<h3 id="update">Update</h3>
+
+<p>Update the current property version with the rules from a local file, or copy from another property.</p>
+
+<pre><code>Usage: akamai property update &lt;property&gt; [options]
+
+Arguments:
+  &lt;property&gt;                                                           [required] [string]
+
+General options:
+  --srcprop &lt;property&gt;  Source property                                           [string]
+  --srcver &lt;version&gt;    Source version                                            [string]
+  --file &lt;path&gt;         File with JSON rules                           [file] [must exist]
+
+Command options:
+  --config &lt;config&gt;    Config file                [file] [default: /Users/khunter/.edgerc]
+  --section &lt;section&gt;  Config section                             [string] [default: papi]
+  --debug &lt;debug&gt;      Turn on debugging.                                        [boolean]
+  --help               Show help                                [commands: help] [boolean]
+  --version            Show version number                   [commands: version] [boolean]
+
+Copyright (C) Akamai Technologies, Inc
+Visit http://github.com/akamai/cli-property for detailed documentation
+</code></pre>
+
+<h3 id="activate">Activate</h3>
+
+<p>Activate the specified property version on staging, production or both.</p>
+
+<pre><code>Usage: akamai property activate &lt;property&gt; [options]
+
+General options:
+  --network &lt;network&gt;  Network for activation      [required] [enum] [PROD, STAGING, BOTH]
+  --propver &lt;version&gt;  Source version to activate                                 [string]
+  --email &lt;address&gt;    Email for confirmation                                     [string]
+
+Command options:
+  --config &lt;config&gt;    Config file                [file] [default: /Users/khunter/.edgerc]
+  --section &lt;section&gt;  Config section                             [string] [default: papi]
+  --debug &lt;debug&gt;      Turn on debugging.                                        [boolean]
+  --help               Show help                                [commands: help] [boolean]
+  --version            Show version number                   [commands: version] [boolean]
+
+Copyright (C) Akamai Technologies, Inc
+Visit http://github.com/akamai/cli-property for detailed documentation
+</code></pre>
+
+<h3 id="modify">Modify</h3>
+
+<pre><code>
+Usage: akamai property modify &lt;property&gt; [options]
+
+General options:
+  --propver &lt;propver&gt;        Property version - LATEST/STAG/PROD/&lt;number&gt;         [string]
+  --ruleformat &lt;ruleformat&gt;  Switch property to specified rule format             [string]
+  --notes &lt;notes&gt;            Version notes for the property version               [string]
+  --new                      Create new property version.                        [boolean]
+  --variables &lt;file&gt;         File with user variables. Format should be:
+                             [
+                               {
+                                 &quot;name&quot;: &quot;PMUSER_TEST&quot;,
+                                 &quot;value&quot;: &quot;Foobar&quot;,
+                                 &quot;description&quot;: &quot;This is my test variable&quot;,
+                                 &quot;hidden&quot;: false,
+                                 &quot;sensitive&quot;: false,
+                                 &quot;action&quot;: [
+                                   &quot;delete&quot;,
+                                   &quot;update&quot;,
+                                   &quot;create&quot;
+                                 ]
+                               }
+                             ]                                           [file]
+
+Hostname options:
+  --addhosts &lt;addhosts&gt;          Comma delimited list of hostnames          [array:string]
+  --delhosts &lt;delhosts&gt;          Comma delimited list of hostnames          [array:string]
+  --edgehostname &lt;edgehostname&gt;  Edge hostname to use                             [string]
+  --origin &lt;origin&gt;              Host for origin                                  [string]
+  --forward &lt;forward&gt;            Forward host header (origin|incoming|&lt;host&gt;)     [string]
+
+SureRoute options:
+  --sureroutemap &lt;sureroutemap&gt;        Map for SureRoute                          [string]
+  --surerouteto &lt;surerouteto&gt;          &quot;To&quot; entry for SureRoute                   [string]
+  --sureroutetohost &lt;sureroutetohost&gt;  Target host entry for SureRoute            [string]
+
+Location options:
+  --cpcode &lt;cpcode&gt;  Use specified cpcode for new property                        [number]
+  --move &lt;move&gt;      Group to move the property to (User Admin perms)             [string]
+
+Command options:
+  --config &lt;config&gt;    Config file                [file] [default: /Users/khunter/.edgerc]
+  --section &lt;section&gt;  Config section                             [string] [default: papi]
+  --debug &lt;debug&gt;      Turn on debugging.                                        [boolean]
+  --help               Show help                                [commands: help] [boolean]
+  --version            Show version number                   [commands: version] [boolean]
+
+</code></pre>
+
+<h2 id="gulp">Gulp</h2>
+
+<p>Download the Gulp integration project from https://github.com/akamai-open/gulp-akamaiconfigkit</p>
+
+<p>In your gulpfile, include the library and define your build targets.</p>
+
+<pre><code>let gulp = require('gulp'),
+    akamaiconfig = require('gulp-akamaiconfigkit');
+
+const localConfig = {
+    host: 'www.example.com',
+    smokeTestUrls: ['/'],
+    emailNotification: 'nobody@akamai.com',
+
+};
+
+const credConfig = {
+    path: &quot;~/.edgerc&quot;,
+    section: &quot;papi&quot;
+}
+
+
+let akamai = new akamaiconfig(credConfig);
+
+gulp.task('deploy-akamai', () =&gt; {
+    return gulp.src(&quot;src/akamai/rules.json&quot;)
+        .pipe(akamai.deployStaging(localConfig))
+        .pipe(akamai.testStaging(localConfig.host, localConfig.smokeTestUrls))
+        .pipe(akamai.promoteStagingToProduction(localConfig));
+})
+</code></pre>
+
+<p>This integration can be used to have a CD tool such as Jenkins push changes to Akamai whenever a rules file changes in your SCM. This allows you to treat your configuration as code and keep your own rules locally.</p>
+
+<h2 id="library">Library</h2>
+
+<p>Start with creating the WebSite object:</p>
+
+<pre><code>let WebSite = require('akamaiconfigkit').WebSite;
+let exampleDotCom = new WebSite();
+
+exampleDotCom.copy(&quot;qa-www.example.com&quot;, &quot;sage-www.example.com&quot;)
+  .then(data -&gt; { console.log(&quot;Rules copied accross Akamai configurations!&quot;)});
+</code></pre>
+
+<p>This will use the [default] credentials in the ~/.edgerc file. Alternate object creations include:</p>
+
+<p>Specifying to use the <code>[continuous_delivery]</code> section in the file <code>/cyberark/edgerc</code></p>
+
+<pre><code>let exampleDotCom = new WebSite({path:&quot;/cyberark/edgerc&quot;, section: &quot;[continuous_delivery]&quot;});
+</code></pre>
+
+<p>You can alternatively specify the <code>clientToken</code>, <code>clientSecret</code>, <code>accessToken</code>, and <code>host</code> as properties of the
+constructor object</p>
+
+<pre><code>let exampleDotCom = new WebSite({clientToken:&quot;a1b2&quot;, clientSecret: &quot;c3d4&quot;, accessToken: &quot;e5f6&quot;, host: &quot;g7h8.luna.akamaiapis.net&quot;});
+</code></pre>
+
+<h2 id="caveats">Caveats</h2>
+
+<p>The Akamai CLI is a new tool and as such we have made some design choices worth mentioning.
+* Edge Hostnames - if not specified, the system will create a new edge hostname, but cannot assign it as it will not yet be active. You will need to run a &#8216;modify&#8217; subsequently to assign the hostname.
+* CPCodes - there is currently a fairly strict limitation on creation of CPCodes. To work around this, pass in a specific CPCode to use. Your account team can create a bunch of CPCodes which you could then use with your properties. Cloned properties will inherit the CPCode of the cloned property.
+* Credentials - the tool expects your credentials to be stored under a &#8216;papi&#8217; section in your ~/.edgerc file. If you are unfamiliar with the authentication and provisioning for OPEN APIs, see the &#8220;Get Started&#8221; section of https://developer.akamai.com
+* Move - in order to perform move functions, the credentials must have both property manager and user admin grants. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+      <footer class="">
+    <div class="container">
+      <div class="content clearfix">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12 text-right text-xs-center">
+            Follow Us: 
+            <a class="icon-facebook" href="http://www.facebook.com/AkamaiTechnologies"></a> 
+            <a class="icon-twitter" href="http://twitter.com/#!/akamaidev"></a> 
+            <a class="icon-linkedin" href="http://www.linkedin.com/company/akamai-technologies"></a> 
+            <a class="icon-youtube" href="http://www.youtube.com/user/akamaitechnologies"></a> 
+            <a class="icon-slideshare" href="http://www.slideshare.net/AkamaiTechnologies"></a> 
+            <a class="icon-blogger" href="https://blogs.akamai.com/"></a> 
+            <a class="icon-rss" href="http://www.akamai.com/dl/akamai/akamairss.xml"></a>
+          </div>
+        </div>
+        <div class="row top-10 text-xs-center">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <p class="footer-links">
+              <span class="group-1"> 
+                <a href="https://www.akamai.com" target="_blank">Akamai Home</a>
+              	<a href="https://www.akamai.com/us/en/about/index.jsp" target="_blank">About</a>
+              	<a href="https://www.akamai.com/us/en/about/news/index.jsp" target="_blank">Newsroom</a>
+              	<a href="https://blogs.akamai.com/" target="_blank">Blog</a> 
+              	<a href="http://www.ir.akamai.com/" target="_blank">Investors</a>
+              </span> | 
+              <span class="group-2"> 
+              	<a href="https://www.akamai.com/us/en/support/index.jsp" target="_blank">Support</a> 
+              	<a href="https://control.akamai.com/" target="_blank">Luna Control Center</a>
+              </span> | 
+              <span class="group-3"> <a
+                href="https://www.akamai.com/us/en/privacy-policies/index.jsp" target="_blank">Privacy &amp; Policies</a>
+              </span>
+            </p>
+            <p class="copyright text-xs-center">&copy; 2018 Akamai Technologies</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+    
+    <!-- Latest compiled and minified JavaScript, requires jQuery 1.x (2.x not supported in IE8) -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/assets/js/jquery.min.js" type="text/javascript"></script>
+    <script src="/assets/themes/bootstrap-3/js/dist/global.min.js"></script>
+
+    <script src="/assets/js/waypoints/lib/jquery.waypoints.min.js" type="text/javascript"></script>
+    <script src="/assets/js/select2/dist/js/select2.full.min.js" type="text/javascript"></script>
+    
+    <script src="/assets/js/devops/index.js" type="text/javascript"></script>
+    
+
+    
+    <script type="text/javascript">
+        jQuery('body').scrollspy({ target: '.sidebar' });
+    </script>
+    
+
+
+    <!-- initialize bootstrap popover for community RSS aggregator -->
+    <div id="rss_aggregator_html" class="hide">
+  <div id="divFeed" class="rss_aggregator"> </div>
+</div>
+<script type="text/javascript">
+  $('#rss_aggregator_popover').popover({
+    html: true,
+    placement: 'bottom',
+    trigger: 'manual', 
+    content: function() {
+      return $('#rss_aggregator_html').html()
+    }
+  })
+  .on("click", function () {
+    $(this).popover("show");
+  })
+  .on('focusout', function() {	// DEBUG: comment out to inspect popover HTML
+    setTimeout(function(t) {	// DEBUG: comment out to inspect popover HTML
+      $(t).popover("hide");	// DEBUG: comment out to inspect popover HTML
+    }, 100, this);		// DEBUG: comment out to inspect popover HTML
+  })
+;
+</script>
+<script type="text/javascript">
+$(document).ready(function () {
+  $('#divFeed').rssfeed('https://community.akamai.com/view-browse-feed.jspa?containerType=14&userID=-1&browseSite=place-content&filterID=contentstatus[published]&browseViewID=placeContent&containerID=2009', {
+    limit: 5,		       // limit_default: 10,
+    // offset_default: 1,
+    header: false,		// header_default: true,
+    // titletag_default: 'h4',
+    // date_default: true,
+    dateformat: 'timeline',	// dateformat_default: 'datetime',
+    // content_default: true,
+    // snippet_default: true,
+    // media_default: true,
+    // showerror_default: true,
+    // errormsg_default: '',
+    // key_default: null,
+    ssl: true, // ssl_default: false,
+    linktarget: '_blank',	// linktarget_default: '_self',
+    // linkredirect_default: '',
+    // linkcontent_default: false,
+    // sort_default: '', 
+    // sortasc_default: true,
+    // historical_default: false
+  });
+});
+</script>
+
+
+
+    <!-- Include HelloBar Widget -->
+    <script src="//my.hellobar.com/0ca4e464feb1e398947d291b1da65a18168713b6.js" type="text/javascript" charset="utf-8" async="async"></script>
+  </body>
+</html>
+

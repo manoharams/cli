@@ -1,0 +1,1207 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="google-site-verification" content="3LUiqL9GgvCGzuzXea8MFX9Ep-dwpGpark5J-XcOVkQ">
+
+    <title>Akamai CLI for Visitor Prioritization</title>
+
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PL4T8TN');</script>
+<!-- End Google Tag Manager -->
+
+
+    
+
+    <meta name="author" content="Akamai Technologies">
+
+    <!-- Bootstrap styles -->
+    <link href="/assets/themes/bootstrap-3/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    
+
+    <!-- Google Fonts -->
+    <!-- <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,300,800' rel='stylesheet' type='text/css'> -->
+
+    <!-- Custom Akamai CSS -->
+    <link rel="stylesheet" href="/assets/css/akamai_style.css">
+
+    
+
+    
+
+    
+
+    
+
+      <meta property="og:type" content="website">
+      <meta property="og:title" content="Akamai CLI for Visitor Prioritization">
+      <meta property="og:description" content="">
+      <meta property="og:image" content="/assets/img/graphic-akamai-cli.jpg">
+
+      
+      <link rel="stylesheet" href="/assets/css/devops/devops.css">
+      
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+      
+      <meta class="swiftype" name="title" data-type="string" content="Akamai CLI for Visitor Prioritization" />
+      
+      <meta class="swiftype" name="image" data-type="enum" content="/devops/images/photo-working-space.jpg" />
+      
+      <meta class="swiftype" name="keyword" data-type="string" content="DevOps Tools" />
+      
+      <meta class="swiftype" name="keyword" data-type="string" content="Akamai CLI" />
+      
+      <meta class="swiftype" name="keyword" data-type="string" content="Command Line Tools" />
+      
+      <meta class="swiftype" name="site-priority" data-type="integer" content="10" />
+      <meta class="swiftype" name="publication" data-type="string" content="us/en" />
+
+    
+
+    
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+
+    
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="/assets/js/html5shiv.js"></script>
+      <script src="/assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom JS for Edge_2016 Page -->
+    
+
+    <!-- Custom JS for landing Page -->
+    
+
+    <!-- Fav and touch icons -->
+    <!-- Update these with your own images
+      <link rel="shortcut icon" href="images/favicon.ico">
+      <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    -->
+
+    <!-- atom & rss feed -->
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+    
+      <!-- Slick -->
+      <link rel="stylesheet" type="text/css" href="/assets/themes/bootstrap-3/slick/slick.css"/>
+      <link rel="stylesheet" type="text/css" href="/assets/themes/bootstrap-3/slick/slick-theme.css"/>
+    
+
+  </head>
+
+  <body class="akamai devops">
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PL4T8TN"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <div class="navbar navbar-default navbar-static-top" role="navigation">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="navbar-header hidden-stop-gap">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+        <div class="inline-block main-logo">
+          <a class="brand akamai" href="/index.html"><img src="/assets/themes/bootstrap-3/img/akamai-developer-logo.jpg" alt="Akamai Developer"></a>
+        </div>
+      </div>
+      <div id="navbar_wrapper" class="navbar-collapse collapse pull-right col-md-8 col-xs-12">
+        <ul class="nav navbar-nav navbar-right text-right pull-right text-xs-center">
+          
+          
+          
+
+
+  
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+        
+          <li><a href="/introduction/">Get Started</a></li>
+        
+      
+    
+  
+    
+      
+      
+      
+        
+          <li><a href="/tools/">Tools</a></li>
+        
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+        
+          <li><a href="/learn/">Learn</a></li>
+        
+      
+    
+  
+
+
+
+ <!-- Builds Intro, ... -->
+          <li>
+            <a href="https://github.com/akamai" target="_blank">Code</a>
+          </li>
+          <li>
+            <span id="rss_aggregator_wrapper">
+              <a href="https://community.akamai.com/community/developer/content" target="_blank">Community</a>
+            </span>
+          </li>
+          <li>
+            <a href="https://developer.akamai.com/blog">Blog</a>
+          </li>
+          <li style="margin-left: 10px;">
+            <a href="https://developer.akamai.com/register" class="btn btn-primary btn-small">Register</a>
+          </li>
+          <li class="navbar-form navbar-right">
+            <form action="/search.html" class="navbar-search left-inner-addon" accept-charset="UTF-8">
+              <i class="glyphicon glyphicon-search"></i>
+              <input class="form-control" type="text" name="q" size="31" placeholder="Search">
+            </form>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="container-fluid" id="redesigned-page">
+
+<div class="js-initStickyNav js-showNavHere">
+    <div class="page-nav__container js-stickyNavContainer">
+        <div class="container">
+
+            <nav class="page-nav">
+                <a class="page-nav__link u-uppercase " href="/cli/">Overview</a>
+                <a class="page-nav__link u-uppercase is-active" href="/cli/packages/">Packages</a>
+                <a class="page-nav__link u-uppercase " href="/cli/docs/">Documentation</a>
+            </nav>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+    
+
+
+
+    
+        
+    
+
+    
+        
+    
+    
+        
+            
+                
+            
+        
+        
+        
+        
+        
+    
+
+
+<div class="page-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="vertical-tabs__container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-2">
+                            <div class="vertical-tabs--mobile__wrapper visible-xs">
+    <select class="vertical-tabs--mobile js-initVerticalTabsOnMobile" id="vertical-tabs-mobile">
+        
+        <option value="#package-authentication" class="u-color--pink" selected="selected">
+            Authentication
+        </option>
+        
+        <option value="#package-netstorage" class="u-color--purple" >
+            NetStorage
+        </option>
+        
+        <option value="#package-network-experience-analytics" class="u-color--orange--dark" >
+            Network Experience Analytics
+        </option>
+        
+        <option value="#package-property-manager" class="u-color--yellow" >
+            Property Manager
+        </option>
+        
+        <option value="#package-purge" class="u-color--red" >
+            Purge
+        </option>
+        
+        <option value="#package-visitor-prioritization" class="u-color--green" >
+            Visitor Prioritization
+        </option>
+        
+    </select>
+</div>
+
+    
+
+<ul class="vertical-tabs nav nav-pills nav-stacked sidebar hidden-xs" role="tablist" data-spy="affix" data-offset-top="180" data-offset-bottom="200">
+    
+    
+    <li class="u-color--pink" role="presentation">
+        <a href="/cli/packages/authentication.html" data-font-size="3">
+            Authentication
+        </a>
+    </li>
+    
+    
+    <li class="u-color--purple" role="presentation">
+        <a href="/cli/packages/netstorage.html" data-font-size="3">
+            NetStorage
+        </a>
+    </li>
+    
+    
+    <li class="u-color--orange--dark" role="presentation">
+        <a href="/cli/packages/network-experience-analytics.html" data-font-size="3">
+            Network Experience Analytics
+        </a>
+    </li>
+    
+    
+    <li class="u-color--yellow" role="presentation">
+        <a href="/cli/packages/property-manager.html" data-font-size="3">
+            Property Manager
+        </a>
+    </li>
+    
+    
+    <li class="u-color--red" role="presentation">
+        <a href="/cli/packages/purge.html" data-font-size="3">
+            Purge
+        </a>
+    </li>
+    
+    
+    <li class="u-color--green active" role="presentation">
+        <a href="/cli/packages/visitor-prioritization.html" data-font-size="3">
+            Visitor Prioritization
+        </a>
+    </li>
+    
+</ul>
+                        </div>
+                        <div class="col-xs-12 col-sm-10">
+                            <div class="vertical-tabs__content tab-content js-scrollToVerticalTabsContent">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-9">
+                                        <h1>Akamai CLI for Visitor Prioritization</h1>
+                                        <p class="lead">
+                                            Access and control Visitor Prioritization cloudlet
+                                        </p>
+                                        <pre><i class="fa fa-download"></i> <code>akamai install visitor-prioritization</code></pre>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-3">
+                                        <ul class="list-group">
+                                            <li class="list-group-item list-group-item-info"><strong>About This Package</strong></li>
+                                            
+                                                <li class="list-group-item"><i class="fa fa-warning"></i> <strong>Requires: </strong> Python >= 3.0.0</li>
+                                            
+                                            
+                                                <li class="list-group-item"><i class="fa fa-github-alt"></i> <a href="https://github.com/akamai/cli-visitor-prioritization">Source</a></li>
+                                            
+                                            
+                                                <li class="list-group-item">
+                                                    <i class="fa fa-bug"></i>
+                                                    <a href="https://github.com/akamai/cli-visitor-prioritization/issues">
+                                                        Issues
+                                                        
+                                                    </a>
+                                                </li>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <p>
+                                            <strong>Latest Release:</strong>
+                                            0.1.0
+                                        </p>
+
+
+                                    </div>
+                                    <div class="col-xs-6 text-right">
+                                    
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <h3>Package Commands</h3>
+                                        <table class="table table-responsive">
+                                            <thead>
+                                            <tr>
+                                                <th class="text-center">Command</th>
+                                                <th class="text-center">Aliases</th>
+                                                <th class="text-center">Version</th>
+                                                <th>Description</th>
+                                                <th class="text-center">Binaries Available</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            
+                                            <tr>
+                                                <td class="text-center">visitor-prioritization</td>
+                                                <td class="text-center">vp</td>
+                                                <td class="text-center">0.1.0</td>
+                                                <td>Access and control Visitor Prioritization cloudlet</td>
+                                                <td class="text-center">
+                                                    
+                                                    <i class="fa u-color--gray--dark fa-ban"></i>
+                                                    
+                                                </td>
+                                            </tr>
+                                            
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <hr>
+                                <h2 id="readme">README</h2>
+
+<h1 id="cli-visitor-prioritization">cli-visitor-prioritization</h1>
+
+<p>Provides a way to interact real-time with your Visitor Prioritization Cloudlet via Open APIs and without manually having to go into the Luna Portal. Provides various functionality such as viewing current policies, current status, rule details, and the ability to invoke actual percentage changes.</p>
+
+<h2 id="localinstall">Local Install</h2>
+
+<ul>
+<li>Python 3+</li>
+<li>pip install edgegrid-python</li>
+</ul>
+
+<h3 id="credentials">Credentials</h3>
+
+<p>In order to use this module, you need to:
+* Set up your credential files as described in the <a href="https://developer.akamai.com/introduction/Prov_Creds.html">authorization</a> and <a href="https://developer.akamai.com/introduction/Conf_Client.html">credentials</a> sections of the Get Started pagegetting started guide on developer.akamai.comthe developer portal.<br/>
+* When working through this process you need to give grants for the Cloudlets Policy Manager API. The section in your configuration file should be called &#8216;cloudlets&#8217;.
+<code>
+[cloudlets]
+client_secret = [CLIENT_SECRET]
+host = [HOST]
+access_token = [ACCESS_TOKEN_HERE]
+client_token = [CLIENT_TOKEN_HERE]
+</code></p>
+
+<h2 id="functionalityversion1.0.0">Functionality (version 1.0.0)</h2>
+
+<p>The initial version of the cloudlet-visitor-prioritization provides the following functionality:
+* One-time setup/download of local policy ids necessary to invoke APIs quickly
+* List current policy details, previous versions, and rules
+* Update/Allow traffic to (make percentage updates) rule for the specified policy and invoke change immediately
+* Download the specified policy rules file in .json format to edit if necessary
+* Create a new policy version based on a raw json file
+* Activate a specific policy version</p>
+
+<h2 id="cli-cloudlet-visitor-prioritization">cli-cloudlet-visitor-prioritization</h2>
+
+<p>Main program that wraps this functionality in a command line utility:
+* <a href="#setup">setup</a>
+* <a href="#list">list</a>
+* <a href="#show">show</a>
+* <a href="#allow">allow</a>
+* <a href="#disable">disable</a>
+* <a href="#activate">activate</a>
+* <a href="#download">download</a>
+* <a href="#create-version">create-version</a></p>
+
+<h3 id="setup">setup</h3>
+
+<p>Does a one time download of Visitor Prioritization Cloudlet policyIds and groupIds and stores them in /setup folder for faster local retrieval. This command can be run anytime and will refresh the /setup folder based on the current list of policies. </p>
+
+<pre><code class="bash">%  akamai-visitor-prioritization setup
+</code></pre>
+
+<h3 id="list">list</h3>
+
+<p>List current Visitor Prioritization Cloudlet policy names </p>
+
+<pre><code class="bash">%  akamai-visitor-prioritization list
+</code></pre>
+
+<h3 id="show">show</h3>
+
+<p>Get specific details for a policy name. Available information include configurations that reference that policy, current version numbers on Akamai staging and production, version history, and current rule settings.</p>
+
+<pre><code class="bash">%  akamai-visitor-prioritization show --policy samplePolicyName
+%  akamai-visitor-prioritization show --policy samplePolicyName --from-version 37
+%  akamai-visitor-prioritization show --policy samplePolicyName --version 66
+%  akamai-visitor-prioritization show --policy samplePolicyName --version 66 --verbose
+</code></pre>
+
+<p>The flags of interest for show are:</p>
+
+<pre><code>--policy &lt;policyName&gt;        Specified Visitor Prioritization Cloudlet policy name
+--version &lt;version&gt;          Specific version number for that policy name (optional)
+--from-version &lt;fromVersion&gt; If --version is not specified, list policy version details starting from --from-version value (optional)
+--verbose                    If --version is specified, add --verbose to get full rule details including url paths and match criteria (optional)
+
+</code></pre>
+
+<h3 id="allow">allow</h3>
+
+<p>Make an actual change to percentage value for a specific rule name in the policy.</p>
+
+<pre><code class="bash">%  akamai-visitor-prioritization allow --percent 50 --policy samplePolicyName --rule 'ruleName' --network production
+%  akamai-visitor-prioritization allow --percent -1 --policy samplePolicyName --rule 'ruleName' --network staging
+%  akamai-visitor-prioritization allow --percent 100 --policy samplePolicyName --rule 'ruleName' --network production --force
+</code></pre>
+
+<p>The flags of interest for allow are:</p>
+
+<pre><code>--percent &lt;value&gt;       Acceptable values are -1 (= All to Waiting Room), 0 &lt;= 100 (100 = everyone allowed)
+--policy &lt;policyName&gt;   Specified Visitor Prioritization Cloudlet policy name
+--rule &lt;ruleName&gt;       Name of rule in policy that should be changed. Use single quotes ('') in case rule name has spaces. If multiple rules exist for the same name, all of them will be updated.
+--network &lt;network&gt;     Either staging or production ; will make change based on latest version on that network
+--allrules              Apply this change to all rules in the policy without needing specific --rule name
+--force                 Use this flag if you want to proceed without confirmation (only for --network production)
+</code></pre>
+
+<h3 id="disable">disable</h3>
+
+<p>Disable or make inactive for a specific rule name in the policy.</p>
+
+<pre><code class="bash">%  akamai-visitor-prioritization disable --policy samplePolicyName --rule 'ruleName' --network production
+%  akamai-visitor-prioritization disable --policy samplePolicyName --rule 'ruleName' --network staging
+%  akamai-visitor-prioritization disable --policy samplePolicyName --allrules --network production --force
+</code></pre>
+
+<p>The flags of interest for throttle are:</p>
+
+<pre><code>--policy &lt;policyName&gt;   Specified Visitor Prioritization Cloudlet policy name
+--rule &lt;ruleName&gt;       Name of rule in policy that should be changed. Use single quotes ('') in case rule name has spaces. If multiple rules exist for the same name, all of them will be updated.
+--network &lt;network&gt;     Either staging or production ; will make change based on latest version on that network
+--allrules              Apply this change to all rules in the policy without needing specific --rule name
+--force                 Use this flag if you want to proceed without confirmation (only for --network production)
+</code></pre>
+
+<h3 id="activate">activate</h3>
+
+<p>Activate a specified version for a policy to the appropriate network (staging or production)</p>
+
+<pre><code class="bash">%  akamai-visitor-prioritization activate --policy samplePolicyName --version 87 --network staging
+%  akamai-visitor-prioritization activate --policy samplePolicyName --version 71 --network production
+</code></pre>
+
+<p>The flags of interest for activate are:</p>
+
+<pre><code>--policy &lt;policyName&gt;   Specified Visitor Prioritization Cloudlet policy name
+--version &lt;version&gt;     Specific version number for that policy name
+--network &lt;network&gt;     Either staging or production
+
+</code></pre>
+
+<h3 id="download">download</h3>
+
+<p>Download the raw policy rules for a specified version in json format for local editing if desired.</p>
+
+<pre><code class="bash">%  akamai-visitor-prioritization download --policy samplePolicyName --version 87
+%  akamai-visitor-prioritization download --policy samplePolicyName --version 71 --output-file savefilename.json
+</code></pre>
+
+<p>The flags of interest for download are:</p>
+
+<pre><code>--policy &lt;policyName&gt;     Specified Visitor Prioritization Cloudlet policy name
+--version &lt;version&gt;       Specific version number for that policy name
+--output-file &lt;filename&gt;  Filename to be saved in /rules folder (optional) 
+
+</code></pre>
+
+<h3 id="create-version">create-version</h3>
+
+<p>Create a new policy version from a raw json file</p>
+
+<pre><code class="bash">%  akamai-visitor-prioritization create-version --policy samplePolicyName
+%  akamai-visitor-prioritization create-version --policy samplePolicyName --file filename.json
+%  akamai-visitor-prioritization create-version --policy samplePolicyName --file filename.json --force
+</code></pre>
+
+<p>The flags of interest for create-version are:</p>
+
+<pre><code>--policy &lt;policyName&gt;  Specified Visitor Prioritization Cloudlet policy name
+--file &lt;file&gt;            Filename of raw .json file to be used as policy details. This file should be in the /rules folder (optional)
+--force                Use this flag if you want to proceed without confirmation if description field in json has not been updated
+</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+      <footer class="">
+    <div class="container">
+      <div class="content clearfix">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12 text-right text-xs-center">
+            Follow Us: 
+            <a class="icon-facebook" href="http://www.facebook.com/AkamaiTechnologies"></a> 
+            <a class="icon-twitter" href="http://twitter.com/#!/akamaidev"></a> 
+            <a class="icon-linkedin" href="http://www.linkedin.com/company/akamai-technologies"></a> 
+            <a class="icon-youtube" href="http://www.youtube.com/user/akamaitechnologies"></a> 
+            <a class="icon-slideshare" href="http://www.slideshare.net/AkamaiTechnologies"></a> 
+            <a class="icon-blogger" href="https://blogs.akamai.com/"></a> 
+            <a class="icon-rss" href="http://www.akamai.com/dl/akamai/akamairss.xml"></a>
+          </div>
+        </div>
+        <div class="row top-10 text-xs-center">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <p class="footer-links">
+              <span class="group-1"> 
+                <a href="https://www.akamai.com" target="_blank">Akamai Home</a>
+              	<a href="https://www.akamai.com/us/en/about/index.jsp" target="_blank">About</a>
+              	<a href="https://www.akamai.com/us/en/about/news/index.jsp" target="_blank">Newsroom</a>
+              	<a href="https://blogs.akamai.com/" target="_blank">Blog</a> 
+              	<a href="http://www.ir.akamai.com/" target="_blank">Investors</a>
+              </span> | 
+              <span class="group-2"> 
+              	<a href="https://www.akamai.com/us/en/support/index.jsp" target="_blank">Support</a> 
+              	<a href="https://control.akamai.com/" target="_blank">Luna Control Center</a>
+              </span> | 
+              <span class="group-3"> <a
+                href="https://www.akamai.com/us/en/privacy-policies/index.jsp" target="_blank">Privacy &amp; Policies</a>
+              </span>
+            </p>
+            <p class="copyright text-xs-center">&copy; 2018 Akamai Technologies</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+    
+    <!-- Latest compiled and minified JavaScript, requires jQuery 1.x (2.x not supported in IE8) -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/assets/js/jquery.min.js" type="text/javascript"></script>
+    <script src="/assets/themes/bootstrap-3/js/dist/global.min.js"></script>
+
+    <script src="/assets/js/waypoints/lib/jquery.waypoints.min.js" type="text/javascript"></script>
+    <script src="/assets/js/select2/dist/js/select2.full.min.js" type="text/javascript"></script>
+    
+    <script src="/assets/js/devops/index.js" type="text/javascript"></script>
+    
+
+    
+    <script type="text/javascript">
+        jQuery('body').scrollspy({ target: '.sidebar' });
+    </script>
+    
+
+
+    <!-- initialize bootstrap popover for community RSS aggregator -->
+    <div id="rss_aggregator_html" class="hide">
+  <div id="divFeed" class="rss_aggregator"> </div>
+</div>
+<script type="text/javascript">
+  $('#rss_aggregator_popover').popover({
+    html: true,
+    placement: 'bottom',
+    trigger: 'manual', 
+    content: function() {
+      return $('#rss_aggregator_html').html()
+    }
+  })
+  .on("click", function () {
+    $(this).popover("show");
+  })
+  .on('focusout', function() {	// DEBUG: comment out to inspect popover HTML
+    setTimeout(function(t) {	// DEBUG: comment out to inspect popover HTML
+      $(t).popover("hide");	// DEBUG: comment out to inspect popover HTML
+    }, 100, this);		// DEBUG: comment out to inspect popover HTML
+  })
+;
+</script>
+<script type="text/javascript">
+$(document).ready(function () {
+  $('#divFeed').rssfeed('https://community.akamai.com/view-browse-feed.jspa?containerType=14&userID=-1&browseSite=place-content&filterID=contentstatus[published]&browseViewID=placeContent&containerID=2009', {
+    limit: 5,		       // limit_default: 10,
+    // offset_default: 1,
+    header: false,		// header_default: true,
+    // titletag_default: 'h4',
+    // date_default: true,
+    dateformat: 'timeline',	// dateformat_default: 'datetime',
+    // content_default: true,
+    // snippet_default: true,
+    // media_default: true,
+    // showerror_default: true,
+    // errormsg_default: '',
+    // key_default: null,
+    ssl: true, // ssl_default: false,
+    linktarget: '_blank',	// linktarget_default: '_self',
+    // linkredirect_default: '',
+    // linkcontent_default: false,
+    // sort_default: '', 
+    // sortasc_default: true,
+    // historical_default: false
+  });
+});
+</script>
+
+
+
+    <!-- Include HelloBar Widget -->
+    <script src="//my.hellobar.com/0ca4e464feb1e398947d291b1da65a18168713b6.js" type="text/javascript" charset="utf-8" async="async"></script>
+  </body>
+</html>
+

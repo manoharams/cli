@@ -1,0 +1,1107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="google-site-verification" content="3LUiqL9GgvCGzuzXea8MFX9Ep-dwpGpark5J-XcOVkQ">
+
+    <title>Akamai CLI: Documentation — Get Started</title>
+
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PL4T8TN');</script>
+<!-- End Google Tag Manager -->
+
+
+    
+
+    <meta name="author" content="Akamai Technologies">
+
+    <!-- Bootstrap styles -->
+    <link href="/assets/themes/bootstrap-3/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    
+
+    <!-- Google Fonts -->
+    <!-- <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,300,800' rel='stylesheet' type='text/css'> -->
+
+    <!-- Custom Akamai CSS -->
+    <link rel="stylesheet" href="/assets/css/akamai_style.css">
+
+    
+
+    
+
+    
+
+    
+
+      <meta property="og:type" content="website">
+      <meta property="og:title" content="Akamai CLI: Documentation — Get Started">
+      <meta property="og:description" content="">
+      <meta property="og:image" content="/assets/img/graphic-akamai-cli.jpg">
+
+      
+      <link rel="stylesheet" href="/assets/css/devops/devops.css">
+      
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+      
+      <meta class="swiftype" name="title" data-type="string" content="Akamai CLI: Documentation — Get Started" />
+      
+      <meta class="swiftype" name="image" data-type="enum" content="/devops/images/photo-working-space.jpg" />
+      
+      <meta class="swiftype" name="keyword" data-type="string" content="DevOps Use Cases" />
+      
+      <meta class="swiftype" name="keyword" data-type="string" content="DevOps Tools" />
+      
+      <meta class="swiftype" name="keyword" data-type="string" content="Edge Logic" />
+      
+      <meta class="swiftype" name="site-priority" data-type="integer" content="10" />
+      <meta class="swiftype" name="publication" data-type="string" content="us/en" />
+
+    
+
+    
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+
+    
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="/assets/js/html5shiv.js"></script>
+      <script src="/assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom JS for Edge_2016 Page -->
+    
+
+    <!-- Custom JS for landing Page -->
+    
+
+    <!-- Fav and touch icons -->
+    <!-- Update these with your own images
+      <link rel="shortcut icon" href="images/favicon.ico">
+      <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    -->
+
+    <!-- atom & rss feed -->
+    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
+    <link href="/rss.xml" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
+
+    
+      <!-- Slick -->
+      <link rel="stylesheet" type="text/css" href="/assets/themes/bootstrap-3/slick/slick.css"/>
+      <link rel="stylesheet" type="text/css" href="/assets/themes/bootstrap-3/slick/slick-theme.css"/>
+    
+
+  </head>
+
+  <body class="akamai devops">
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PL4T8TN"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <div class="navbar navbar-default navbar-static-top" role="navigation">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="navbar-header hidden-stop-gap">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+        <div class="inline-block main-logo">
+          <a class="brand akamai" href="/index.html"><img src="/assets/themes/bootstrap-3/img/akamai-developer-logo.jpg" alt="Akamai Developer"></a>
+        </div>
+      </div>
+      <div id="navbar_wrapper" class="navbar-collapse collapse pull-right col-md-8 col-xs-12">
+        <ul class="nav navbar-nav navbar-right text-right pull-right text-xs-center">
+          
+          
+          
+
+
+  
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+        
+          <li><a href="/introduction/">Get Started</a></li>
+        
+      
+    
+  
+    
+      
+      
+      
+        
+          <li><a href="/tools/">Tools</a></li>
+        
+      
+    
+  
+    
+      
+      
+      
+    
+  
+    
+      
+      
+      
+        
+          <li><a href="/learn/">Learn</a></li>
+        
+      
+    
+  
+
+
+
+ <!-- Builds Intro, ... -->
+          <li>
+            <a href="https://github.com/akamai" target="_blank">Code</a>
+          </li>
+          <li>
+            <span id="rss_aggregator_wrapper">
+              <a href="https://community.akamai.com/community/developer/content" target="_blank">Community</a>
+            </span>
+          </li>
+          <li>
+            <a href="https://developer.akamai.com/blog">Blog</a>
+          </li>
+          <li style="margin-left: 10px;">
+            <a href="https://developer.akamai.com/register" class="btn btn-primary btn-small">Register</a>
+          </li>
+          <li class="navbar-form navbar-right">
+            <form action="/search.html" class="navbar-search left-inner-addon" accept-charset="UTF-8">
+              <i class="glyphicon glyphicon-search"></i>
+              <input class="form-control" type="text" name="q" size="31" placeholder="Search">
+            </form>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="container-fluid" id="redesigned-page">
+
+<div class="hero-devops__container hero-cli__container">
+    <div class="hero-devops hero-cli">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+
+                    <h1 class="u-normal u-height--100 u-uppercase u-color--white" data-font-size="13">
+                        Akamai CLI
+                    </h1>
+                    <p class="u-expanded u-uppercase u-color--white" data-font-size="5">
+                        <strong>
+                            The power of the Edge
+                            <br>in your terminal.
+                        </strong>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="js-initStickyNav js-showNavHere">
+    <div class="page-nav__container js-stickyNavContainer">
+        <div class="container">
+
+            <nav class="page-nav">
+                <a class="page-nav__link u-uppercase " href="/cli/">Overview</a>
+                <a class="page-nav__link u-uppercase " href="/cli/packages/">Packages</a>
+                <a class="page-nav__link u-uppercase is-active" href="/cli/docs/">Documentation</a>
+            </nav>
+
+        </div>
+    </div>
+</div>
+
+<div class="page-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+
+        <div class="vertical-tabs__container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-4 col-md-3">
+              <div class="vertical-tabs nav nav-pills nav-stacked visible-xs">
+    
+    <li class=" active" role="presentation">
+        <a href="/cli/docs/index.html" data-font-size="3">
+            Get Started
+        </a>
+    </li>
+    
+    <li class="" role="presentation">
+        <a href="/cli/docs/contributing.html" data-font-size="3">
+            Contributing
+        </a>
+    </li>
+    
+    <li class="" role="presentation">
+        <a href="/cli/docs/custom-packages.html" data-font-size="3">
+            Custom Packages
+        </a>
+    </li>
+    
+    <li class="" role="presentation">
+        <a href="/cli/docs/style-guide.html" data-font-size="3">
+            Style Guide
+        </a>
+    </li>
+    
+</div>
+<ul class="vertical-tabs nav nav-pills nav-stacked sidebar hidden-xs" role="tablist" data-spy="affix" data-offset-top="600" data-offset-bottom="200">
+    
+    <li class=" active" role="presentation">
+        <a href="/cli/docs/index.html" data-font-size="3">
+            Get Started
+        </a>
+        
+        <ul class="nav">
+            
+                <li><a href="#goals" class="u-color--gray">Goals</a></li>
+            
+                <li><a href="#installation" class="u-color--gray">Installation</a></li>
+            
+                <li><a href="#upgrading" class="u-color--gray">Upgrading</a></li>
+            
+                <li><a href="#usage" class="u-color--gray">Usage</a></li>
+            
+        </ul>
+    
+    </li>
+    
+    <li class="" role="presentation">
+        <a href="/cli/docs/contributing.html" data-font-size="3">
+            Contributing
+        </a>
+        
+    </li>
+    
+    <li class="" role="presentation">
+        <a href="/cli/docs/custom-packages.html" data-font-size="3">
+            Custom Packages
+        </a>
+        
+    </li>
+    
+    <li class="" role="presentation">
+        <a href="/cli/docs/style-guide.html" data-font-size="3">
+            Style Guide
+        </a>
+        
+    </li>
+    
+</ul>
+            </div>
+            <div class="col-xs-12 col-sm-8 col-md-9">
+              <div class="vertical-tabs__content tab-content js-scrollToVerticalTabsContent">
+                <h1 id="akamaicli:getstarted">Akamai CLI: Get Started</h1>
+
+<p>Akamai CLI is an ever-growing CLI toolkit for working with Akamai&#8217;s API from the command line.</p>
+
+<h2 id="goals">Goals</h2>
+
+<ul>
+<li>Simplicity</li>
+<li>Feature-full</li>
+<li>Consistent UX</li>
+</ul>
+
+<h2 id="installation">Installation</h2>
+
+<p>Akamai CLI itself has no dependencies, but may rely on packages that can be written using any language and may require additional runtimes.</p>
+
+<h3 id="downloadareleasebinary">Download a Release Binary</h3>
+
+<p>The easiest way to install Akamai CLI is to download a <a href="https://github.com/akamai/cli/releases">release binary</a> for your platform and follow the instructions for your platform below. There are <em>no additional requirements</em>.</p>
+
+<h4 id="linuxandmacos">Linux and macOS</h4>
+
+<p>Once you have downloaded the appropriate binary for your system, you must make it executable, and optionally move it somewhere within your path.</p>
+
+<pre><code class="sh">$ chmod +x ~/Downloads/akamai-&lt;VERSION&gt;-&lt;PLATFORM&gt;
+$ mv ~/Downloads/akamai-&lt;VERSION&gt;-&lt;PLATFORM&gt; /usr/local/bin/akamai
+</code></pre>
+
+<h4 id="windows">Windows</h4>
+
+<p>Once you have downloaded the appropriate binary for your system, no further actions
+are required on your part, simply execute the binary from the command line.</p>
+
+<h3 id="usinghomebrew">Using Homebrew</h3>
+
+<p>If you are using macOS, you can also install using the <a href="https://brew.sh">Homebrew</a> package manager:</p>
+
+<pre><code class="sh">$ brew install akamai
+</code></pre>
+
+<p>This will install all necessary dependencies, compile, and install the binary — which will then be available globally.</p>
+
+<h3 id="usingdocker">Using Docker</h3>
+
+<p>If you use (or want to use) <a href="http://docker.com">docker</a>, you can get a fully installed CLI instance by running:</p>
+
+<pre><code class="sh">$ docker run -ti akamaiopen/cli
+</code></pre>
+
+<p>The container contains Akamai CLI, as well as the <code>purge</code> and <code>property</code> subcommands pre-installed. </p>
+
+<blockquote>
+<p><strong>Note</strong>: When setting up your <code>.edgerc</code>, the <code>purge</code> subcommand defaults to the <code>ccu</code> credentials section, while the <code>property</code> subcommand uses the <code>papi</code> section. These can be changed using the <code>--section</code> flag.</p>
+</blockquote>
+
+<h3 id="compilingfromsource">Compiling from Source</h3>
+
+<p>If you want to compile it from source, you will need Go 1.7 or later, and the <a href="https://glide.sh">Glide</a> package manager installed:</p>
+
+<ol>
+<li>Fetch the package:<br/>
+ <code>go get github.com/akamai/cli</code></li>
+<li>Change to the package directory:<br/>
+ <code>cd $GOPATH/src/github.com/akamai/cli</code></li>
+<li>Install dependencies using Glide:<br/>
+ <code>glide install</code></li>
+<li>Compile the binary:</li>
+<li>Linux/macOS/*nix: <code>go build -o akamai</code></li>
+<li>Windows: <code>go build -o akamai.exe</code></li>
+<li>Move the binary (<code>akamai</code> or <code>akamai.exe</code>) it to your <code>PATH</code></li>
+</ol>
+
+<h3 id="credentials">Credentials</h3>
+
+<p>Akamai CLI uses the standard Akamai OPEN credentials file, <code>.edgerc</code>. By default, it will look for credentials in your <code>HOME</code> directory.</p>
+
+<p>You can override both the credentials file location, or the section, by passing the the <code>--edgerc</code> or <code>--section</code> flags to each command.</p>
+
+<p>To set up your credential file, see the <a href="https://developer.akamai.com/introduction/Prov_Creds.html">authorization</a> and <a href="https://developer.akamai.com/introduction/Conf_Client.html">credentials</a> sections of the Get Started guide.</p>
+
+<h2 id="upgrading">Upgrading</h2>
+
+<p>Akamai CLI can automatically check for newer versions (at most, once per day). You will be prompted to enable this feature the first time you run Akamai CLI v0.3.0 or later.</p>
+
+<p>If a new version is found, you will be prompted to upgrade. Choosing to do so will download the latest version in-place, and your original command will then be executed using the <em>new</em> version.</p>
+
+<p>Akamai CLI <em>automatically</em> checks the SHA256 signature of the new version to verify it&#8217;s validity.</p>
+
+<p>To manually upgrade, see <code>akamai upgrade</code></p>
+
+<h2 id="usage">Usage</h2>
+
+<p>All commands start with the <code>akamai</code> binary, followed by a <code>command</code>, and optionally an action or other arguments.</p>
+
+<pre><code>akamai [command] [action] [arguments...]
+</code></pre>
+
+<h3 id="built-incommands">Built-in commands</h3>
+
+<h4 id="help">Help</h4>
+
+<p>Calling <code>akamai help</code> will show basic usage info, and available commands. To learn more about a specific command, use <code>akamai help &lt;command&gt; [action]</code>.</p>
+
+<pre><code class="bash">$ akamai help                   # General Akamai CLI help
+$ akamai help property          # General Akamai CLI for Property Manager Help
+$ akamai help property create   # Help for the &quot;create&quot; action for Akamai CLI for Property Manager
+</code></pre>
+
+<h4 id="list">List</h4>
+
+<p>Calling <code>akamai list</code> will show you a list of available commands. If a command is not shown, ensure that the binary is executable, and in your <code>PATH</code>.</p>
+
+<pre><code class="bash">$ akamai list
+</code></pre>
+
+<h4 id="install">Install</h4>
+
+<p>The <code>install</code> command allows you to easily install new packages from a git repository.</p>
+
+<p>Calling <code>akamai install &lt;package name or repository URL&gt;</code> will download and install the command repository to the <code>$HOME/.akamai-cli</code> directory.</p>
+
+<p>For Github repositories, you can pass in <code>user/repo</code> or <code>organization/repo</code>. For official Akamai packages, you can omit the <code>akamai/cli-</code> prefix, so to install <code>akamai/cli-property</code> you can specify <code>property</code>.</p>
+
+<p>For example, all of the following will install Akamai CLI for Property Manager from Github using various aliases:</p>
+
+<pre><code class="bash">$ akamai install property
+$ akamai install akamai/cli-property
+$ akamai install https://github.com/akamai/cli-property.git
+$ akamai install git@github.com:akamai/cli-property.git # requires private repository access
+</code></pre>
+
+<h4 id="update">Update</h4>
+
+<p>To update a package installed with <code>akamai install</code>, you call <code>akamai update &lt;command&gt;</code>, where <code>&lt;command&gt;</code> is any command within that package.</p>
+
+<p>Calling <code>akamai update</code> with no arguments will update <em>all</em> packages installed using <code>akamai install</code></p>
+
+<pre><code class="bash">$ akamai update property # Update the Akamai CLI for Property Manager package
+$ akamai update          # Update all packages
+</code></pre>
+
+<h4 id="upgrade">Upgrade</h4>
+
+<p>Manually upgrade Akamai CLI to the latest version.</p>
+
+<pre><code class="bash">$ akamai upgrade
+</code></pre>
+
+<h3 id="installedcommands">Installed Commands</h3>
+
+<p>To call an installed command, use <code>akamai &lt;command&gt; [args]</code>, e.g.</p>
+
+<pre><code class="bash">$ akamai property create example.org
+</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+      <footer class="">
+    <div class="container">
+      <div class="content clearfix">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12 text-right text-xs-center">
+            Follow Us: 
+            <a class="icon-facebook" href="http://www.facebook.com/AkamaiTechnologies"></a> 
+            <a class="icon-twitter" href="http://twitter.com/#!/akamaidev"></a> 
+            <a class="icon-linkedin" href="http://www.linkedin.com/company/akamai-technologies"></a> 
+            <a class="icon-youtube" href="http://www.youtube.com/user/akamaitechnologies"></a> 
+            <a class="icon-slideshare" href="http://www.slideshare.net/AkamaiTechnologies"></a> 
+            <a class="icon-blogger" href="https://blogs.akamai.com/"></a> 
+            <a class="icon-rss" href="http://www.akamai.com/dl/akamai/akamairss.xml"></a>
+          </div>
+        </div>
+        <div class="row top-10 text-xs-center">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <p class="footer-links">
+              <span class="group-1"> 
+                <a href="https://www.akamai.com" target="_blank">Akamai Home</a>
+              	<a href="https://www.akamai.com/us/en/about/index.jsp" target="_blank">About</a>
+              	<a href="https://www.akamai.com/us/en/about/news/index.jsp" target="_blank">Newsroom</a>
+              	<a href="https://blogs.akamai.com/" target="_blank">Blog</a> 
+              	<a href="http://www.ir.akamai.com/" target="_blank">Investors</a>
+              </span> | 
+              <span class="group-2"> 
+              	<a href="https://www.akamai.com/us/en/support/index.jsp" target="_blank">Support</a> 
+              	<a href="https://control.akamai.com/" target="_blank">Luna Control Center</a>
+              </span> | 
+              <span class="group-3"> <a
+                href="https://www.akamai.com/us/en/privacy-policies/index.jsp" target="_blank">Privacy &amp; Policies</a>
+              </span>
+            </p>
+            <p class="copyright text-xs-center">&copy; 2018 Akamai Technologies</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+    
+    <!-- Latest compiled and minified JavaScript, requires jQuery 1.x (2.x not supported in IE8) -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/assets/js/jquery.min.js" type="text/javascript"></script>
+    <script src="/assets/themes/bootstrap-3/js/dist/global.min.js"></script>
+
+    <script src="/assets/js/waypoints/lib/jquery.waypoints.min.js" type="text/javascript"></script>
+    <script src="/assets/js/select2/dist/js/select2.full.min.js" type="text/javascript"></script>
+    
+    <script src="/assets/js/devops/index.js" type="text/javascript"></script>
+    
+
+    
+    <script type="text/javascript">
+        jQuery('body').scrollspy({ target: '.sidebar' });
+    </script>
+    
+
+
+    <!-- initialize bootstrap popover for community RSS aggregator -->
+    <div id="rss_aggregator_html" class="hide">
+  <div id="divFeed" class="rss_aggregator"> </div>
+</div>
+<script type="text/javascript">
+  $('#rss_aggregator_popover').popover({
+    html: true,
+    placement: 'bottom',
+    trigger: 'manual', 
+    content: function() {
+      return $('#rss_aggregator_html').html()
+    }
+  })
+  .on("click", function () {
+    $(this).popover("show");
+  })
+  .on('focusout', function() {	// DEBUG: comment out to inspect popover HTML
+    setTimeout(function(t) {	// DEBUG: comment out to inspect popover HTML
+      $(t).popover("hide");	// DEBUG: comment out to inspect popover HTML
+    }, 100, this);		// DEBUG: comment out to inspect popover HTML
+  })
+;
+</script>
+<script type="text/javascript">
+$(document).ready(function () {
+  $('#divFeed').rssfeed('https://community.akamai.com/view-browse-feed.jspa?containerType=14&userID=-1&browseSite=place-content&filterID=contentstatus[published]&browseViewID=placeContent&containerID=2009', {
+    limit: 5,		       // limit_default: 10,
+    // offset_default: 1,
+    header: false,		// header_default: true,
+    // titletag_default: 'h4',
+    // date_default: true,
+    dateformat: 'timeline',	// dateformat_default: 'datetime',
+    // content_default: true,
+    // snippet_default: true,
+    // media_default: true,
+    // showerror_default: true,
+    // errormsg_default: '',
+    // key_default: null,
+    ssl: true, // ssl_default: false,
+    linktarget: '_blank',	// linktarget_default: '_self',
+    // linkredirect_default: '',
+    // linkcontent_default: false,
+    // sort_default: '', 
+    // sortasc_default: true,
+    // historical_default: false
+  });
+});
+</script>
+
+
+
+    <!-- Include HelloBar Widget -->
+    <script src="//my.hellobar.com/0ca4e464feb1e398947d291b1da65a18168713b6.js" type="text/javascript" charset="utf-8" async="async"></script>
+  </body>
+</html>
+

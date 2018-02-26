@@ -1,0 +1,134 @@
+/* Threshold height of sample JSONs, because they can be overly long */
+
+.tabs pre
+{
+    max-height    : 3in;
+    overflow-y    : scroll;
+}
+
+/* Apply bold to highlight subcategories within the "API Summary" table */
+
+.opsum td[colspan]
+{
+    font-weight   : bold;
+}
+
+/* Boost size to highlight request syntax, and differentiate from
+   other request details */
+
+.reqsyntax
+{
+    font-size     : larger;
+    margin-top    : 1pc;
+    margin-bottom : 0.5pc;
+}
+
+/* Tab UI, based on radio input checked state */
+
+.tabs
+{
+    padding-top                : 0.1em;
+    position                   : relative;
+    margin-bottom              : 1em;
+}
+
+.tabs > div
+{
+    border                     : thin solid #aaa;
+    margin-top                 : 2.0em;
+    min-height                 : 200px;
+    padding                    : 1em;
+}
+
+input, input + label + div
+{
+    display                    : none;
+}
+
+input:checked + label + div
+{
+    display                    : block;
+}
+
+input:checked + label + div ~ div
+{
+    display                    : none;
+}
+
+input + label
+{
+    -khtml-user-select         : none;
+    -moz-user-select           : none;
+    -ms-user-select            : none;
+    -webkit-touch-callout      : none;
+    -webkit-user-select        : none;
+    background                 : #ddd;
+    border                     : thin solid #aaa;
+    font-family: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+    height                     : 2.25em;
+    padding                    : 0.25em;
+    text-align                 : center;
+    text-transform             : uppercase;
+    user-select                : none;
+    width                      : 1.45in;
+}
+
+input:checked + label
+{
+    background    : #fff;
+    border-bottom : thin solid #fff;
+    color         : #bbb;
+}
+
+.tab1,
+.tab2,
+.tab3,
+.tab4,
+.tab5
+{
+    position                   : absolute;
+    top                        : 0;
+}
+
+.tab1 { left: 0in; }
+.tab2 { left: 1.5in; }
+.tab3 { left: 3in; }
+.tab4 { left: 4.5in; }
+.tab5 { left: 6in; }
+
+/*
+For use in draft, if CSS applies but tab-arranging JS does not execute
+*/
+
+.request::before,
+.response::before,
+.parameters::before,
+.steps::before
+{
+    font-weight    : bold;
+    text-transform : uppercase;
+    background     : #777;
+    padding        : 0.5em;
+    color          : #fff;
+    float          : right;
+}
+
+.request::before
+{
+    content: "request";
+}
+
+.response::before
+{
+    content: "response";
+}
+
+.parameters::before
+{
+    content: "parameters";
+}
+
+.steps::before
+{
+    content: "steps";
+}
